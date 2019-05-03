@@ -9,9 +9,13 @@ layout: default
                 color: red;
                 text-align: center;
             } 
-            h1 {
-                color: rgb(208, 255, 249);
-                text-align: justify;
+            h1.rightblue {
+                color: blue;
+                text-align: right;
+            }
+            h1.leftred {
+                color: red;
+                text-align: left;
             }
             h2 {
                 color: palevioletred;
@@ -50,14 +54,6 @@ layout: default
             div.showhidden:hover p.defaulthidden {
                 visibility: visible;
             }
-            .circles {
-                background-color: skyblue;
-                padding: 30px;
-                margin: 20px;
-                border: 5px solid darkslategray;
-                border-radius: 50%;
-                max-width: 1000px;
-            }
         </style>
     </head>
 <body>
@@ -75,7 +71,15 @@ layout: default
     - Melina = mlna -->
 
 
-    
+    <!-- antn - Two headers with two different style classes -->
+    <h1.rightblue>
+        Is this blue and right aligned?
+    </h1.rightblue>
+
+    <h1.leftred>
+        This is probably red and left aligned?
+    </h1.leftred>
+
     <!-- mlna - We're using <h1> for header 1, "A header?" -->
     <!-- antn - using inline CSS to add color to this header -->
     <div class="boxes">
@@ -98,11 +102,11 @@ layout: default
     </ol>
     </div>
 
-    <div style="circles">
+
     <!-- mlna - An image-->
     <p>An image of doge.</p>
     <img src="https://dogemuchwow.com/wp-content/uploads/2017/11/web-developer-doge.jpg">
-    </div>
+
     
     <!-- We're using <h2> for a secondary header, "Wowers, another header." -->
     <h2> Wowers, another header.</h2>
