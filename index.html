@@ -3,157 +3,56 @@ layout: default
 ---
 <!DOCTYPE html>
 <html>
-    <head>
-        <style type="text/css">
-            p {
-                color: red;
-                text-align: center;
-            } 
-            h1 {
-                color: rgb(208, 255, 249);
-                text-align: justify;
-            }
-            h2 {
-                color: palevioletred;
-                text-align: end;
-            }
-            em {
-                color: goldenrod;
-                text-emphasis: em;
-            }
-            /* borrowing Mark's box because I liked it enough to try using it */
-            .boxes {
-            background-color: rgb(236, 236, 236);
-            padding: 20px;
-            margin: 20px;
-            border: 3px solid magenta;
-            border-radius: 15px;
-            margin-left: auto;
-            margin-right: auto;
-            width: 80%;
-            max-width: 900px;
-            overflow: auto;
-            box-shadow: 5px 5px 5px;
-            }
-            /* a test to hide some text */
-            div.showhidden p.defaulthidden {
-                visibility: hidden;
-            }
-            div.showhidden:hover p.defaulthidden {
-                visibility: visible;
-            }
-        </style>
-    </head>
 <body>
-<h2>----- NEW WORK STARTS HERE (copying from Melina's Page) -----</h2>
+    <!-- mlna made the first header pink-->
+<style>
+ h1{color: pink;} 
+ </style>
 
-<!-- LEADING COMMENT: PLEASE READ -->
-<!-- All of us (Andre, Anton, Melina) are working on Melina's github site 
-    together, assigning each other sections to work through and working 
-    on different sections on our own accord. -->
-
-<!-- Key for Edits: 
-    - Andre  = andr
-    - Anton  = antn
-    - Melina = mlna -->
-
-
-    
-    <!-- mlna - We're using <h1> for header 1, "A header?" -->
-    <!-- antn - using inline CSS to add color to this header -->
-    <div class="boxes">
-    <h1 style="color:cyan">A header?</h1>
-
-    
-    <!-- mlna - We're adding <p> to keep the next segment of text in normal format -->
-    <p>A paragraph. This is under the first header. It's amazing. This class is super cool.
-        I love this class. Amen.
-    </p>
-    <!-- mlna - A span with a magenta word-->
-    <p> This is a special paragraph, because span is used.<span style ="color: magenta"> Super cool.</span></p>
-    <!-- mlna - An ordered list-->
-    <p> A list of animals</p>
-    <ol type = "1"> 
-        <li>cat</li>
-        <li>dog</li>
-        <li>fish</li>
-        <li>chicken</li>
-    </ol>
-    </div>
-
-    <!-- mlna - An image-->
-    <p>An image of doge.</p>
-    <img src="https://dogemuchwow.com/wp-content/uploads/2017/11/web-developer-doge.jpg">
-    <!-- We're using <h2> for a secondary header, "Wowers, another header." -->
-    <h2> Wowers, another header.</h2>
-    
-    <!-- antn - We're using <strong> here to display some BOLD text -->
-    <p> This class is <strong>EXCITING</strong>.</p>
-    
-    <!-- antn - We're making some normal text using <p>, then making some different
-        colored text using <span> combined with "style="-->
-    <p>I'm going to try something out of the <span style="color:blue">blue</span> with 
-        special colored text.</p>
-    
-    <!-- antn - We're dividing text by adding a colorful background to it using 
-        <div> -->
+<h1>Good morning (h1 test)</h1>
+<h2>Sub heading test (h2 test)</h2>
+<p>mr boat man has arrived and is attempting to learn</p>
+<p>he is also breaking his website with literally
+    every modification</p>
     <div style="background-image:linear-gradient(to right, rgb(160, 255, 247) , rgb(255, 159, 191))"">
-        <p>c o l o r f u l t e x t</p>
+        <!--Applying a gradient and deciding colors was interesting-->
+        <p>I am testing a <strong>bold</strong> and <em>italicized</em> text division (div test)</p>
+        <!--Didn't think <em> was used for italics-->
     </div>
-    
-    <!-- antn - We're making a table. Using <table> to start off the code
-        so VSC knows we want to make a table.-->
-    <table>
-        <!-- We're using <tr> here to let VSC know that we're starting
-            the table's top row here -->
-        <tr>
-            <!-- We're using <th> here to let VSC know that we're making
-                header cells for our table -->
-            <th><strong>Table Cell 1</strong></th>
-            <th><strong>Table Cell 2</strong></th>
-            <th><strong>Table Cell 3</strong></th>
-        </tr>
-        <!-- Another row for our table -->
-        <tr>
-            <!-- This time, we're using <td> to specify that the following
-                cells are for data for our table -->
-            <td>Table Cell 4</td>
-            <td>Table Cell 5</td>
-            <td>Table Cell 6</td>
-        </tr>
-        <!-- Repeat of above, but now it's a third row -->
-        <tr>
-            <td>Table Cell 7</td>
-            <td>Table Cell 8</td>
-            <td>Table Cell 9</td>
-        </tr>
-    </table>
-    
-    <!-- Andre - We're using <div> to establish a paragraph 1, "Is this a paragraph?" -->
-    <div>I like writing paragraphs. Paragraphs gives me alot of purpose in my writing. I also like to skateboard and read in my spare time.</div>
-    
-    <!-- Andre - We're using <em> to italicize a sentence -->
-    <em> I'm going to try and italicize this sentence. </em>
-    
-    <!-- Andre - We're using <ol> and <ul> to create a list, "Is this a list?" -->
-    <ul><li>Red</li><li>Yellow</li><li>Green</li></ul>
-    
-    <!-- antn - We're adding an image using <img> while also adding some text in-case
-        the image doesn't load.-->
-    <h2>Here's an image of Joker from Persona 5 in Super Smash 
-        Bros. Ultimate</h2>
-    <img src="https://www.ssbwiki.com/images/e/eb/SSBUWebsiteJoker1.jpg", alt="Joker from 
-        Persona 5, appearing in Super Smash Bros Ultimate.">
-    
-    <!-- andr An image-->
-    <p>An image of Frank Ocean.</p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Frank_ocean_green_hair.jpg">
-    <!--andr We're using <h2> for a third header, "Wow, a third header." -->
-    <h2> Wow, follow me on ig : andre_vanguardia.</h2>
-    <div class="showhidden">
-    <p>There's some cool hidden text below. Hover over this text to see what I'm thinking...</p>
-    <p class="defaulthidden">I am |this| to nuking this page and starting over.</p>
-</div>
+
+<table>
+    <tr>
+        <th><strong>Table Cell 1</strong></th>
+        <th><strong>Table Cell 2</strong></th>
+        <th><strong>Table Cell 3</strong></th>
+    </tr>
+    <tr>
+        <td>Table Cell 4</td>
+        <td>Table Cell 5</td>
+        <td>Table Cell 6</td>
+    </tr>
+    <tr>
+        <td>Table Cell 7</td>
+        <td>Table Cell 8</td>
+        <td>Table Cell 9</td>
+    </tr>
+</table>
+
+<ol>
+    <li>Ordered list bullet 1</li>
+    <li>Ordered list bullet 2</li>
+    <li>Ordered list bullet 3</li>
+    <li>Ordered list bullet 4</li>
+</ol>
+
+<ul>
+    <li>Unordered list bullet 1</li>
+    <li>Unordered list bullet 2</li>
+    <li>Unordered list bullet 3</li>
+    <li>Unordered list bullet 4</li>
+</ul>
+
+<p>Here's a picture of Marth from Fire Emblem.</p>
+<img src="https://www.ssbwiki.com/images/d/d9/SSBUWebsiteMarth1.jpg">
 </body>
 </html> 
-
