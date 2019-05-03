@@ -3,77 +3,88 @@ layout: default
 ---
 <!DOCTYPE html>
 <html>
-    <head>
-        <style type="text/css">
-        /* antn - making some paragraph text red and center aligned */
-            p {
-                color: red;
-                text-align: center;
-            } 
 
-            /* antn - making two different header classes with different alignments and different colors */
-            h1.rightblue {
-                color: blue;
-                text-align: right;
-            }
-            h1.leftred {
-                color: red;
-                text-align: left;
-            }
-            h2 {
-                color: palevioletred;
-                text-align: end;
-                /*meln made header 2 shadow powder blue**/
-                text-shadow:powderblue 2px 2px;
-            }
-            em {
-                color: goldenrod;
-                text-emphasis: em;
-            }
-            /*meln made a cool text decoration**/
-            div.w{
-                text-decoration-line: underline;
-                text-decoration-style: wave;
-                text-decoration-color: greenyellow;
-            }
-            /*meln made text stretched**/
-            div.s{
-                font-stretch: extra-expanded;
-                font-weight:100;
-            }
-            /* borrowing Mark's box because I liked it enough to try using it */
-            .boxes {
+<head>
+    <link rel=styleTest" type="text/css" href="styleTest.css">
+    <style type="text/css">
+        /* antn - making some paragraph text red and center aligned */
+        p {
+            color: red;
+            text-align: center;
+        }
+
+        /* antn - making two different header classes with different alignments and different colors */
+        h1.rightblue {
+            color: blue;
+            text-align: right;
+        }
+
+        h1.leftred {
+            color: red;
+            text-align: left;
+        }
+
+
+        h2 {
+            color: palevioletred;
+            text-align: end;
+            /*meln made header 2 shadow powder blue**/
+            text-shadow: powderblue 2px 2px;
+        }
+
+        em {
+            color: goldenrod;
+            text-emphasis: em;
+        }
+
+        /*meln made a cool text decoration**/
+        div.w {
+            text-decoration-line: underline;
+            text-decoration-style: wave;
+            text-decoration-color: greenyellow;
+        }
+
+        /*meln made text stretched**/
+        div.s {
+            font-stretch: extra-expanded;
+            font-weight: 100;
+        }
+
+        /* antn - borrowing Mark's box because I liked it enough to try using it */
+        .boxes {
             background-color: rgb(236, 236, 236);
             padding: 20px;
             margin: 20px;
-            border: 3px solid magenta;
-            border-radius: 15px;
+            border: 3px solid lightseagreen;
             margin-left: auto;
             margin-right: auto;
             width: 80%;
             max-width: 900px;
             overflow: auto;
-            box-shadow: 5px 5px 5px;
-            }
-            /* a test to hide some text */
-            div.showhidden p.defaulthidden {
-                visibility: hidden;
-            }
-            div.showhidden:hover p.defaulthidden {
-                visibility: visible;
-            }
-        </style>
-    </head>
+            box-shadow: 5px 7px 7px hotpink;
+        }
+
+        /* a test to hide some text */
+        div.showhidden p.defaulthidden {
+            visibility: hidden;
+        }
+
+        div.showhidden:hover p.defaulthidden {
+            visibility: visible;
+        }
+    </style>
+</head>
+
 <body>
 
-<h2>----- NEW WORK STARTS HERE (copying from Melina's Page) -----</h2>
+    <h2>----- NEW WORK STARTS HERE (copying from Melina's Page) -----</h2>
 
-<!-- LEADING COMMENT: PLEASE READ -->
-<!-- All of us (Andre, Anton, Melina) are working on Melina's github site 
+    <!-- LEADING COMMENT: PLEASE READ -->
+    <!-- All of us (Andre, Anton, Melina) are working on Melina's github site 
     together, assigning each other sections to work through and working 
     on different sections on our own accord. -->
 
-<!-- Key for Edits: 
+    <!-- Key for Edits: 
     - Andre  = andr
     - Anton  = antn
     - Melina = mlna/meln -->
@@ -91,23 +102,23 @@ layout: default
     <!-- mlna - We're using <h1> for header 1, "A header?" -->
     <!-- antn - using inline CSS to add color to this header -->
     <div class="boxes">
-    <h1 style="color:cyan">A header?</h1>
+        <h1 style="color:cyan">A header?</h1>
 
-    
-    <!-- mlna - We're adding <p> to keep the next segment of text in normal format -->
-    <p>A paragraph. This is under the first header. It's amazing. This class is super cool.
-        I love this class. Amen.
-    </p>
-    <!-- mlna - A span with a magenta word-->
-    <p> This is a special paragraph, because span is used.<span style ="color: magenta"> Super cool.</span></p>
-    <!-- mlna - An ordered list-->
-    <p> A list of animals</p>
-    <ol type = "1"> 
-        <li>cat</li>
-        <li>dog</li>
-        <li>fish</li>
-        <li>chicken</li>
-    </ol>
+
+        <!-- mlna - We're adding <p> to keep the next segment of text in normal format -->
+        <p>A paragraph. This is under the first header. It's amazing. This class is super cool.
+            I love this class. Amen.
+        </p>
+        <!-- mlna - A span with a magenta word-->
+        <p> This is a special paragraph, because span is used.<span style="color: magenta"> Super cool.</span></p>
+        <!-- mlna - An ordered list-->
+        <p> A list of animals</p>
+        <ol type="1">
+            <li>cat</li>
+            <li>dog</li>
+            <li>fish</li>
+            <li>chicken</li>
+        </ol>
     </div>
 
 
@@ -115,18 +126,18 @@ layout: default
     <p>An image of doge.</p>
     <img src="https://dogemuchwow.com/wp-content/uploads/2017/11/web-developer-doge.jpg">
 
-    
+
     <!-- We're using <h2> for a secondary header, "Wowers, another header." -->
     <h2> Wowers, another header.</h2>
-    
+
     <!-- antn - We're using <strong> here to display some BOLD text -->
     <p> This class is <strong>EXCITING</strong>.</p>
-    
+
     <!-- antn - We're making some normal text using <p>, then making some different
         colored text using <span> combined with "style="-->
-    <p>I'm going to try something out of the <span style="color:blue">blue</span> with 
+    <p>I'm going to try something out of the <span style="color:blue">blue</span> with
         special colored text.</p>
-    
+
     <!-- antn - We're dividing text by adding a colorful background to it using 
         <div> -->
     <div style="background-image:linear-gradient(to right, rgb(160, 255, 247) , rgb(255, 159, 191))"">
@@ -161,21 +172,26 @@ layout: default
         </tr>
     </table>
     
-    <!-- Andre - We're using <div> to establish a paragraph 1, "Is this a paragraph?" -->
-    <!--meln made this div para pink-->
-    <div style = "color:pink">I like writing paragraphs. Paragraphs gives me alot of purpose in my writing. I also like to skateboard and read in my spare time.</div>
-    
-    <!-- Andre - We're using <em> to italicize a sentence -->
-    <em> I'm going to try and italicize this sentence. </em>
-    
-    <!-- Andre - We're using <ol> and <ul> to create a list, "Is this a list?" -->
-    <ul><li>Red</li><li>Yellow</li><li>Green</li></ul>
-    
-    <!-- antn - We're adding an image using <img> while also adding some text in-case
+    <!-- Andre - We're using <div> to establish a paragraph 1, " Is this a paragraph?" -->
+        <!--meln made this div para pink-->
+        <div style="color:pink">I like writing paragraphs. Paragraphs gives me alot of purpose in my writing. I also
+            like to skateboard and read in my spare time.</div>
+
+        <!-- Andre - We're using <em> to italicize a sentence -->
+        <em> I'm going to try and italicize this sentence. </em>
+
+        <!-- Andre - We're using <ol> and <ul> to create a list, "Is this a list?" -->
+        <ul>
+            <li>Red</li>
+            <li>Yellow</li>
+            <li>Green</li>
+        </ul>
+
+        <!-- antn - We're adding an image using <img> while also adding some text in-case
         the image doesn't load.-->
-    <h2>Here's an image of Joker from Persona 5 in Super Smash 
-        Bros. Ultimate</h2>
-    <img src="https://www.ssbwiki.com/images/e/eb/SSBUWebsiteJoker1.jpg", alt="Joker from 
+        <h2>Here's an image of Joker from Persona 5 in Super Smash
+            Bros. Ultimate</h2>
+        <img src="https://www.ssbwiki.com/images/e/eb/SSBUWebsiteJoker1.jpg" , alt="Joker from 
         Persona 5, appearing in Super Smash Bros Ultimate.">
     
     <!-- andr An image-->
@@ -189,6 +205,18 @@ layout: default
 </div>
 <!--meln made this next line-->
 <div class ="w" class="s"><em> Look at these waves!</em></div>
-</body>
-</html> 
 
+        <!-- andr An image-->
+        <p>An image of Frank Ocean.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Frank_ocean_green_hair.jpg">
+        <!--andr We're using <h2> for a third header, "Wow, a third header." -->
+        <h2> Wow, follow me on ig : andre_vanguardia.</h2>
+        <div class="showhidden">
+            <p>There's some cool hidden text below. Hover over this text to see what I'm thinking...</p>
+            <p class="defaulthidden">I am |this| to nuking this page and starting over.</p>
+        </div>
+        <!--meln made this next line-->
+        <div class="w" class="s"><em> Look at these waves!</em></div>
+</body>
+
+</html>
