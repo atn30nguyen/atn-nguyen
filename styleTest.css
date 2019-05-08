@@ -1,0 +1,64 @@
+p {
+    color: red;
+    text-align: center;
+}
+
+/* antn - making two different header classes with different alignments and different colors */
+h1.rightblue {
+    color: blue;
+    text-align: right;
+}
+
+h1.leftred {
+    color: red;
+    text-align: left;
+}
+
+
+h2 {
+    color: palevioletred;
+    text-align: end;
+    /*meln made header 2 shadow powder blue**/
+    text-shadow: powderblue 2px 2px;
+}
+
+em {
+    color: goldenrod;
+    text-emphasis: em;
+}
+
+/*meln made a cool text decoration**/
+div.w {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: greenyellow;
+}
+
+/*meln made text stretched**/
+div.s {
+    font-variant:small-caps;
+    font-weight: 900;
+}
+
+/* antn - borrowing and modifying Mark's box because I liked it enough to try using it */
+.boxes {
+    background-color: rgb(236, 236, 236);
+    padding: 20px;
+    margin: 20px;
+    border: 3px solid lightseagreen;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 900px;
+    overflow: auto;
+    box-shadow: 2px 5px 10px hotpink;
+}
+
+/* a test to hide some text */
+div.showhidden p.defaulthidden {
+    visibility: hidden;
+}
+
+div.showhidden:hover p.defaulthidden {
+    visibility: visible;
+}
