@@ -1,5 +1,6 @@
+/* antn - making all of the paragraph text on the page a certain color */
 p {
-    color: red;
+    color: crimson;
     text-align: center;
 }
 
