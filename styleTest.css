@@ -85,7 +85,7 @@ over an image */
     right: 0;
     background-color: white;
     overflow: hidden;
-    width: 100%;
+    width: auto;
     height: 0;
     transition: 1s ease-in-out;
 }
@@ -93,4 +93,18 @@ over an image */
 .container:hover .overlay {
     bottom: 0;
     height: 100%;
-  }
+}
+
+.text {
+    white-space: nowrap;
+    color: red;
+    font-size: 150;
+    font-style: italic;
+    position: absolute;
+    -webkit-text-stroke: 5px black;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate (-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
