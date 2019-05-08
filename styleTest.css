@@ -39,6 +39,7 @@ div.w {
 div.s {
     font-variant:small-caps;
     font-weight: 900;
+    text-decoration-color: deeppink;
 }
 
 /* antn - borrowing and modifying Mark's box because I liked it enough to try using it */
