@@ -35,11 +35,11 @@ div.w {
     text-decoration-color: greenyellow;
 }
 
-/*meln made text stretched**/
+/*meln made text cool*/
 div.s {
     font-variant:small-caps;
     font-weight: 900;
-    text-decoration-color: deeppink;
+    color: deeppink;
 }
 
 /* antn - borrowing and modifying Mark's box because I liked it enough to try using it */
