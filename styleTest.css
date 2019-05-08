@@ -66,7 +66,7 @@ div.showhidden:hover p.defaulthidden {
 }
 
 /* antn - using w3schools as a reference, here's some code that can slide a white solid
-over an image */
+over an image and add some text */
 .container {
     position: relative;
     width: 100%;
