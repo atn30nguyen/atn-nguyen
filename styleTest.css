@@ -1,8 +1,8 @@
 /* antn - making all of the paragraph text on the page a certain color */
-p {
+/*p {
     color: crimson;
     text-align: center;
-}
+}*/
 
 /* antn - making two different header classes with different alignments and different colors */
 h1.rightblue {
