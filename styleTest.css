@@ -139,17 +139,17 @@ over an image and add some text */
     border-radius: 15px;
     padding: 2px;
 }
-p2
+p.two
 {
     color:purple;
     text-align: center;
 }
 /*em2 and em3 done by meln*/
-em2 {
+em.two {
     color: cyan;
     text-emphasis: em;
 }
-em3
+em.three
 {
     color: darkgreen;
     text-emphasis: em;
