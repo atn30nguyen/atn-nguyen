@@ -108,3 +108,15 @@ over an image and add some text */
     transform: translate (-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
+
+.navbar .dropdown-item:hover{
+    background-color:palevioletred;
+}
+
+.row{
+    margin: 15px;
+    background: rgba(200, 200, 255, .7);
+    border-radius: 15px;
+    padding: 2px;
+}
+
