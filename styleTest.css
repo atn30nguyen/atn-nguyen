@@ -116,8 +116,8 @@ over an image and add some text */
 .row{
     margin: 15px;
     background: rgba(200, 200, 255, .7);
-    border-radius: 3px;
-    padding: 10px;
+    border-radius: 15px;
+    padding: 2px;
 }
 /* meln- an image container to make grids with images, images are faced until hovered*/
 .img-container {
@@ -132,3 +132,26 @@ over an image and add some text */
     filter: alpha(opacity=50);
 }
 
+/* meln row 2 and p2 for formating text with a rounded corner background*/
+.row2{
+    margin: 15px;
+    background: coral;
+    border-radius: 15px;
+    padding: 2px;
+}
+p.two
+{
+    color:purple;
+    text-align: center;
+}
+/*em2 and em3 done by meln*/
+em.two {
+    color: cyan;
+    text-emphasis: em;
+}
+em.three
+{
+    color: darkgreen;
+    text-emphasis: em;
+    font-weight: 900;
+}
