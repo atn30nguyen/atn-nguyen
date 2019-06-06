@@ -411,6 +411,8 @@
         </div>
         <h1>JAVASCRIPT STUFF</h1>
         <div class="row">
+            
+            <p>A phrase added to a template sentence with JavaScript.</p>
             <p id="JSPhrase"></p>
             <script>
                 let word1 = "cash";
@@ -418,29 +420,27 @@
                 let phrase = word1 + " " + word2;
                 document.getElementById("JSPhrase").innerHTML = "That's not very " + phrase + " of you."
 
+
+            </script>
+        </div>
+        <div class="row">
+
+            <p id="JSPhrase"></p>
+            <script>
                 var x = "X";
                 var o = "O";
                 var xAndO = { x, o, x }
-                document.getElementById("JSPhrase").innerHTML = "An X: " + xAndO[0] + " An O: " + xandO[1];          
+                document.getElementById("JSPhrase").innerHTML = "An X: " + xAndO[0] + " An O: " + xandO[1];           
             </script>
-            <div class="row">
-                <p id="JSPhrase"></p>
-                <script>
-                    var word1 = "cash";
-                    var word2 = "money";
-                    var phrase = word1 + " " + word2;
-                    document.getElementById("JSPhrase").innerHTML = "That's not very " + phrase + " of you."            
-                </script>
-            </div>
-            <div class="col">
-                <p id="JSArray"></p>
-                <script>
-                    var colors = ["red", "orange", "yellow", "green", "blue", "violet"];
-                    document.getElementById("JSArray").innerHTML = colors;
-                </script>
-            </div>
-            
+
+            <p id="JSArray"></p>
+            <script>
+                var colors = ["red", "orange", "yellow", "green", "blue", "violet"];
+                document.getElementById("JSArray").innerHTML = colors;
+            </script>
         </div>
+
+    </div>
     </div>
 
 </body>
