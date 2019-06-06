@@ -404,7 +404,12 @@
                 var word1 = "cash";
                 var word2 = "money";
                 var phrase = word1 + " " + word2;
-                document.getElementById("JSPhrase").innerHTML = "That's not very " + phrase + " of you."            
+                document.getElementById("JSPhrase").innerHTML = "That's not very " + phrase + " of you." 
+
+                var x = "X"; 
+                var o = "O"; 
+                var xAndO = {x,o,x}
+                document.getElementById("JSPhrase").innerHTML = "An X: " + xAndO[0] + " An O: " + xandO[1];          
             </script>
         </div>
         
