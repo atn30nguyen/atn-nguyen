@@ -397,11 +397,11 @@
                         <p>
                             java stuff.
                         </p>
-                        <p id = "JSTest"></p>
+                        <p id="JSTest"></p>
                         <script>
                             var x = "X";
                             var o = "O";
-                            var xAndO = [ x, o, x ];
+                            var xAndO = [x, o, x];
                             document.getElementById("JSTest").innerHTML = xAndO[0];   
                         </script>
                     </div>
@@ -412,7 +412,7 @@
         </div>
         <h1>JAVASCRIPT STUFF</h1>
         <div class="row">
-            
+
             <p>A phrase added to a template sentence with JavaScript.</p>
             <p id="JSPhrase"></p>
             <script>
@@ -424,9 +424,39 @@
 
             </script>
         </div>
+
+        <div class="row">
+            <p>The colors of the rainbow printed using a JS Array.</p>
+            <p id="JSArray"></p>
+
+            <script>
+                var colors = ["red", "orange", "yellow", "green", "blue", "violet"];
+                document.getElementById("JSArray").innerHTML = colors;
+            </script>
+        </div>
+
+
+        <div class="row">
+            <p id="JSLoop"></p>
+
+            <script>
+                let numArray = [];
+                let num = 10;
+                let count = "";
+                let i;
+                for(i = 1; i <= num; i++){
+                    count += i + "<br>";
+                    
+                }
+                document.getElementById("JSLoop").innerHTML = count;
+                </script>
+
+        </div>
+
+
         <div class="row">
 
-            <p id="JSPhrase"></p>
+            <p id="JSTicTacToe"></p>
             <script>
                 var x = "X";
                 var o = "O";
@@ -434,14 +464,13 @@
                 document.getElementById("JSPhrase").innerHTML = "An X: " + xAndO[0] + " An O: " + xandO[1];           
             </script>
 
-            <p id="JSArray"></p>
-            <script>
-                var colors = ["red", "orange", "yellow", "green", "blue", "violet"];
-                document.getElementById("JSArray").innerHTML = colors;
-            </script>
-        </div>
 
-    </div>
+
+
+
+
+
+        </div>
     </div>
 
 </body>
