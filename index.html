@@ -493,16 +493,17 @@
         <p id="JSNumber"></p>
         <script>
             var numOfClicks = 0;
+            var message = "";
             document.getElementById("JSClick").onclick = function () { numOfClicks = numOfClicks + 1; };
             if (numOfClicks < 10) {
-
-                document.getElementById("JSDone").onclick = function () { alert("Number of clicks done: " + numOfClicks + " Good job!")};
+                message = " Good job!"
                 
             } 
             else 
             {
-                document.getElementById("JSDone").onclick = function () { alert("Number of clicks done: " + numOfClicks + " That's a lot of clicks!") };
+                message = " That's a lot of clicks!"
             }
+            document.getElementById("JSDone").onclick = function () { alert("Number of clicks done: " + numOfClicks + message) };
         </script>
     </div>
 
