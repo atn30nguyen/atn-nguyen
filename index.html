@@ -487,15 +487,25 @@
         </script>
     </div>
     <h1> A click counter.</h1>
-    <div class= "h2">
+    <div class="h2">
         <p id="JSClick">Click Here</p>
         <p id="JSDone">Done</p>
-        <p id = "JSNumber"></p>
+        <p id="JSNumber"></p>
         <script>
             var numOfClicks = 0;
             document.getElementById("JSClick").onclick = function () { numOfClicks = numOfClicks + 1; };
-            document.getElementById("JSDone").onclick = function(){ alert("Number of clicks done: " + numOfClicks)}
-
+            if (numOfClicks = 0) 
+            { 
+                document.getElementById("JSDone").onclick = function () { alert("Number of clicks done: " + numOfClicks + " Come on! At least try.") };
+            }
+            if(numOfClicks < 10)
+            {
+                document.getElementById("JSDone").onclick = function () { alert("Number of clicks done: " + numOfClicks + " That's a lot of clicks!") };
+            }
+            else
+            {
+                document.getElementById("JSDone").onclick = function () { alert("Number of clicks done: " + numOfClicks) };
+            }
         </script>
     </div>
 </body>
