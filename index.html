@@ -473,19 +473,31 @@
 
         </div>
     </div>
+    <!-- meln did most of this section, antn added code involving 3-->
     <h1>Click on the 1 or 2 below and see what happens</h1>
     <div class="h2">
 
-        <p id = "JSOne"> 1 </p>
-        <p id = "JSTwo"> 2 </p> 
-        <p id = "JSThree"> 3 </p> 
+        <p id="JSOne"> 1 </p>
+        <p id="JSTwo"> 2 </p>
+        <p id="JSThree"> 3 </p>
         <script>
-            document.getElementById("JSOne").onclick = function () {alert("This is a one.")};
-            document.getElementById("JSTwo").onclick = function () {alert("This is a two.")};
-            document.getElementById("JSThree").onclick = function () {alert("Who told you to click on this??")};
+            document.getElementById("JSOne").onclick = function () { alert("This is a one.") };
+            document.getElementById("JSTwo").onclick = function () { alert("This is a two.") };
+            document.getElementById("JSThree").onclick = function () { alert("Who told you to click on this??") };
         </script>
     </div>
+    <h1> A click counter.</h1>
+    <div class=h2>
+        <p id="JSClick">Click Here</p>
+        <p id="JSDone">Done</p>
+        <p id = "JSNumber"></p>
+        <script>
+            var numOfClicks = 0;
+            document.getElementById("JSClick").onclick = function () { numOfClicks = numOfClicks + 1; };
+            document.getElementById("JSDone").onclick = function(){ alert("Number of clicks done: " + numOfClicks)}
 
+        </script>
+    </div>
 </body>
 
 </html>
