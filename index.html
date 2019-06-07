@@ -473,15 +473,12 @@
 
         </div>
     </div>
-    <h1>Clink on the 1 or 2 and see what happens</h1>
+    <h1>Click on the 1 or 2 and see what happens</h1>
     <div class="h2">
 
-        <p id = "JSNumbers"></p>
+        <p id = "JSNumbers"> 1 </p>
         <script>
-            var one = 1;
-            document.getElementById("JSNumbers").innerHTML = one;
-            let number = one;
-            number.onclick = function () { alert("This is a one")};
+            document.getElementById("JSNumbers").onclick = function () {alert("This is a one")};
         </script>
     </div>
 
