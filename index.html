@@ -411,12 +411,12 @@
                     class="align-self-start mr-3" style="width:200px;" alt="Detective Pikachu Dancing" title="Pikadab!">
             </div>
         </div>
+
         <h1>JAVASCRIPT STUFF</h1>
-        
+
         <!-- antn - JS code that allows for a short phrase of 2 words to be added in
         this sentence, like a catchphrase -->
         <div class="row">
-
             <p>A phrase added to a template sentence with JavaScript.</p>
             <p id="JSPhrase"></p>
             <script>
@@ -424,8 +424,6 @@
                 let word2 = "money";
                 let phrase = word1 + " " + word2;
                 document.getElementById("JSPhrase").innerHTML = "That's not very " + phrase + " of you."
-
-
             </script>
         </div>
 
@@ -452,16 +450,12 @@
                 let i;
                 for (i = 1; i <= num; i++) {
                     count += i + "<br>";
-
                 }
                 document.getElementById("JSLoop").innerHTML = count;
             </script>
-
         </div>
 
-
         <div class="row">
-
             <p id="JSTicTacToe"></p>
             <script>
                 var x = "X";
@@ -469,17 +463,11 @@
                 var xAndO = { x, o, x }
                 document.getElementById("JSPhrase").innerHTML = "An X: " + xAndO[0] + " An O: " + xandO[1];           
             </script>
-
-
-
-
-
-
-
         </div>
     </div>
+
     <!-- meln did most of this section, antn added code involving 3-->
-    
+    <!-- update: antn - fixing up the code for the conditionals (if-else) so it works as intended -->
     <h1>Click on the 1 or 2 below and see what happens</h1>
     <div class="h2">
 
@@ -492,24 +480,27 @@
             document.getElementById("JSThree").onclick = function () { alert("Who told you to click on this??") };
         </script>
     </div>
+
     <h1> A click counter. Click on instructed area. Click done when finished to see results.</h1>
     <div class="h2">
         <p id="JSClick">Click Here</p>
         <p id="JSDone">Done</p>
         <p id="JSNumber"></p>
         <script>
-            var numOfClicks = 0;
-            var message = "";
+            let numOfClicks = 0;
+            let message = "";
             document.getElementById("JSClick").onclick = function () { numOfClicks = numOfClicks + 1; };
-            if (numOfClicks < 10) {
-                message = " Good job!"
-                
-            } 
-            else 
-            {
-                message = " That's a lot of clicks!"
+
+            function clickCount(arg) {
+                if (numOfClicks < 5) {
+                    return message = " Good job!"
+                }
+                else {
+                    return message = " That's a lot of clicks!"
+                }
             }
-            document.getElementById("JSDone").onclick = function () { alert("Number of clicks done: " + numOfClicks + message) };
+
+            document.getElementById("JSDone").onclick = function () { alert("Number of clicks done: " + numOfClicks + clickCount()) };
         </script>
     </div>
 
